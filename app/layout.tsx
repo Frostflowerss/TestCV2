@@ -1,21 +1,16 @@
-import "./globals.css";
-import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "CV | Portfolio",
-  description: "Personal CV website",
-  metadataBase: new URL("https://example.com"),
-  openGraph: {
-    title: "CV | Portfolio",
-    description: "Personal CV website",
-    type: "website",
-  },
+import "./globals.css";
+
+export const metadata = {
+  title: "Luxury CV",
+  description: "Luxury motion CV"
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }) {
   return (
-    <html lang="vi" className="bg-ink-950">
-      <body className="min-h-screen bg-ink-950 text-paper-100 font-sans antialiased">
+    <html lang="vi">
+      <body>
+        <div className="progress-bar" id="progressBar"></div>
         {children}
       </body>
     </html>
