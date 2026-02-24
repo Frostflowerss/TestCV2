@@ -123,7 +123,7 @@ export default function Page() {
           </div>
 
           <div className="py-8 text-center text-[12px] muted2">
-            © {new Date().getFullYear()} {cv.name}. Built with Next.js + Tailwind. Deployed on Vercel.
+            © {new Date().getFullYear()} {cv.name}.
           </div>
         </section>
       </div>
