@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+
+::selection {
+  background: rgba(217, 164, 65, 0.25);
+}
+
+a { text-decoration: none; }
+
+@layer utilities {
+  .hairline {
+    border-color: rgba(233,233,237,0.14);
+  }
+  .muted {
+    color: rgba(233,233,237,0.72);
+  }
+  .muted2 {
+    color: rgba(233,233,237,0.56);
+  }
+  .bg-grid {
+    background-image:
+      radial-gradient(circle at 1px 1px, rgba(233,233,237,0.06) 1px, transparent 0);
+    background-size: 18px 18px;
+  }
+}
